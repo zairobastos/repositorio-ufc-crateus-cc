@@ -1,0 +1,3 @@
+## Materia de Fundamentos de ProgramaçãoMaterial de estudos de Ciência da Computação 
+## O foco dessa disciplina foi na linguagem C
+## Senha do .Zip 0x411 Hex -> Dec
