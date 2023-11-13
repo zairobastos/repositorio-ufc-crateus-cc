@@ -1,0 +1,2 @@
+## Arquivos e notas de aulas sobre a cadeira de circuitos digitais. Podem ocorrer erros e inconcistencias nas infomações postas neste material.
+## Caso tenha alguma consideração a fazer, commit suas sugestões.
