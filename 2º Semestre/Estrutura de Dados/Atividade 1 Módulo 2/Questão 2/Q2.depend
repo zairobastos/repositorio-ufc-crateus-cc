@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1613429866 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 1 modulo 2\q2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"duplamenteencadeada.h"
+
+1613429866 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 1 modulo 2\q2\duplamenteencadeada.h
+
+1613239184 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 1 modulo 2\q2\duplamenteencadeada.c
+	<stdio.h>
+	<stdlib.h>
+	"duplamenteencadeada.h"
+
