@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1611860837 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q10\main.c
+	<stdio.h>
+	<stdlib.h>
+	"concatena.h"
+
+1611860717 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q10\concatena.h
+
+1611860872 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q10\concatena.c
+	<stdio.h>
+	<stdlib.h>
+	"concatena.h"
+
