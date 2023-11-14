@@ -1,0 +1,52 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication3;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Marlon Duarte
+ */
+public class JavaApplication3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        int numerador, denominador, resultado = 0;
+        
+        while (true){
+            try {
+                System.out.println("Numerador:  ");
+                numerador = leitor.nextInt();
+                limparBuffer(leitor);
+                System.out.println("Denominador:  ");
+                denominador = leitor.nextInt();
+                limparBuffer(leitor);
+                resultado = numerador/denominador;
+            } catch (ArithmeticException e){
+                System.out.println("Indeterminação! (x/0)");
+                limparBuffer(leitor);
+                
+            } catch (InputMismatchException e){
+                System.out.println("Entrada inválida!");
+                limparBuffer(leitor);
+            }
+            System.out.println("Resultado: " + resultado);
+        }
+        
+    }
+    
+    private static void limparBuffer(Scanner leitor) {
+        if (leitor.hasNextLine()) {
+            leitor.nextLine();
+        }
+    }
+        
+}
