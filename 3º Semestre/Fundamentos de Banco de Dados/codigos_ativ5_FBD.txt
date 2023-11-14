@@ -1,0 +1,31 @@
+CREATE TABLE pais (  nome VARCHAR(35) NOT NULL,  continente VARCHAR(35) NOT NULL,  populacao REAL NOT NULL,  PIB REAL NOT NULL,  Expec_vida REAL NOT NULL )
+
+create table cidade ( nome varchar (35) not null, pais varchar (35) not null, populacao float (5,2) not null, capital varchar (1) not null )
+
+create table rio ( nome varchar (35) not null, nascente varchar (35) not null, pais varchar (35) not null, comprimento integer not null )
+
+insert into pais (nome, continente, populacao, PIB, Expec_vida) values ("Canada", "Am. Norte", 30.1, 658, 77.08)
+
+insert into pais (nome, continente, populacao, PIB, Expec_vida) values ("Mexico", "Am. Norte", 107.5, 694, 69.1)
+
+insert into pais (nome, continente, populacao, PIB, Expec_vida) values ("Brasil", "Am. Sul", 183.3, 10004, 65.2)
+
+insert into pais (nome, continente, populacao, PIB, Expec_vida) values ("USA", "Am. Norte", 270.0, 8003, 75.5)
+
+INSERT INTO cidade (nome, pais, populacao, capital) VALUES("Washington", "USA", 3.3, "S")
+
+INSERT INTO cidade (nome, pais, populacao, capital) VALUES("Monterrey", "mexico", 2.0, "N")
+
+INSERT INTO cidade (nome, pais, populacao, capital) VALUES("Brasilia", "brasil", 1.5, "S")
+
+INSERT INTO cidade (nome, pais, populacao, capital) VALUES("Ottawa", "canada", 0.8, "S")
+
+INSERT INTO cidade (nome, pais, populacao, capital) VALUES("Cid. Mexico", "mexico", 14.1, "S")
+
+INSERT INTO rio (nome, nascente, pais, comprimento) VALUES("St. Lawrence", "USA", "USA", 3.3)
+
+INSERT INTO rio (nome, nascente, pais, comprimento) VALUES("Grande", "USA", "mexico", 2.0)
+
+INSERT INTO rio (nome, nascente, pais, comprimento) VALUES("Parana", "Brasil", "Brasil", 1.5)
+
+INSERT INTO rio (nome, nascente, pais, comprimento) VALUES("Mississipi", "USA", "USA", 15.0)

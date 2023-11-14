@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+  <para>ENTIDADE: LOGIN</para>
+  <informaltable frame="all">
+    <tgroup cols="2"><tbody><row><entry><para>E-MAIL</para></entry><entry><para>SENHA</para></entry></row><row><entry><para><ulink url="mailto:chiquinho@gmail.com">chiquinho@gmail.com</ulink></para></entry><entry><para>abc123</para></entry></row><row><entry><para><ulink url="mailto:luluzinha@hotmail.com">luluzinha@hotmail.com</ulink></para></entry><entry><para>lulu2005</para></entry></row><row><entry><para><ulink url="mailto:enzo_freefire@outlook.com">enzo_freefire@outlook.com</ulink></para></entry><entry><para>minhasenha123</para></entry></row></tbody></tgroup>
+  </informaltable>
+  <para/>
+  <para>ENTIDADE: CONTA</para>
+  <informaltable frame="all">
+    <tgroup cols="4"><tbody><row><entry><para>ID</para></entry><entry><para>NOME</para></entry><entry><para>E-MAIL</para></entry><entry><para>AVATAR</para></entry></row><row><entry><para>951987654</para></entry><entry><para>Francisco Franciscano Franco</para></entry><entry><para><ulink url="mailto:chiquinho@gmail.com">chiquinho@gmail.com</ulink></para></entry><entry><para>Image.jpg</para></entry></row><row><entry><para>159258369</para></entry><entry><para>Luiza Luzinete Leal</para></entry><entry><para><ulink url="mailto:luluzinha@hotmail.com">luluzinha@hotmail.com</ulink></para></entry><entry><para>Image.jpg</para></entry></row><row><entry><para>369478256</para></entry><entry><para>Enzo Schwarzenegger da Silva</para></entry><entry><para><ulink url="mailto:enzo_freefire@outlook.com">enzo_freefire@outlook.com</ulink></para></entry><entry><para>Image.jpg</para></entry></row></tbody></tgroup>
+  </informaltable>
+  <para/>
+  <para>ENTIDADE: RECEITA</para>
+  <para/>
+  <informaltable frame="all">
+    <tgroup cols="3"><tbody><row><entry><para>TOTAL</para></entry><entry><para>CARTÃO DÉBITO</para></entry><entry><para>DATA</para></entry></row><row><entry><para>5,850.25</para></entry><entry><para>5,850.25</para></entry><entry><para>03/05/2021</para></entry></row><row><entry><para>1,089.03</para></entry><entry><para>1,089.03</para></entry><entry><para>06/05/2021</para></entry></row><row><entry><para>20,021.53</para></entry><entry><para>11,022.50</para></entry><entry><para>15/05/2021</para></entry></row></tbody></tgroup>
+  </informaltable>
+  <para/>
+  <para>ENTIDADE: DESPESA</para>
+  <para/>
+  <informaltable frame="all">
+    <tgroup cols="3"><colspec colnum="1" colname="c1"/><colspec colnum="2" colname="c2"/><colspec colnum="3" colname="c3"/><tbody><row><entry><para>VALOR</para></entry><entry><para>DATA</para></entry><entry><para>DESCRIÇÃO</para></entry><entry><para>CATEGORIA</para></entry><entry><para>COD. DESPESA</para></entry><entry><para>F. PAGAMENTO</para></entry><entry><para>STATUS</para></entry></row><row><entry><para>R$ 550.00</para></entry><entry><para>04/05/2021</para></entry><entry><para>ALUGUEL</para></entry><entry><para>CASA</para></entry><entry><para>863752148</para></entry><entry><para>DINHEIRO</para></entry><entry><para>PAGO</para></entry></row><row><entry><para>R$ 260.00</para></entry><entry><para>08/05/2021</para></entry><entry><para>PEÇAS</para></entry><entry><para>CARRO</para></entry><entry><para>786453126</para></entry><entry><para>DÉBITO</para></entry><entry><para>PAGO</para></entry></row><row><entry><para>R$ 880.00</para></entry><entry><para>17/05/2021</para></entry><entry><para>JOGO</para></entry><entry><para>OUTROS</para></entry><entry><para>891783549</para></entry><entry><para>CRÉDITO</para></entry><entry><para>-</para></entry></row></tbody></tgroup>
+  </informaltable>
+  <para/>
+  <para>ENTIDADE: CARTÃO</para>
+  <informaltable frame="all">
+    <tgroup cols="6"><tbody><row><entry><para>NÚMERO</para></entry><entry><para>BANDEIRA</para></entry><entry><para>LIMITE</para></entry><entry><para>VALOR</para></entry><entry><para>DATA FATURA</para></entry><entry><para>TIPO</para></entry></row><row><entry><para>55667784</para></entry><entry><para>VISA</para></entry><entry><para>-</para></entry><entry><para>5,850.25</para></entry><entry><para>-</para></entry><entry><para>DÉBITO</para></entry></row><row><entry><para>55662635</para></entry><entry><para>MASTERCARD</para></entry><entry><para>R$860.00</para></entry><entry><para>-</para></entry><entry><para>10</para></entry><entry><para>CRÉDITO</para></entry></row><row><entry><para>22487593</para></entry><entry><para>ELO</para></entry><entry><para>R$22,800.00</para></entry><entry><para>-</para></entry><entry><para>18</para></entry><entry><para>CRÉDITO</para></entry></row></tbody></tgroup>
+  </informaltable>
+  <para/>
+  <para/>
+</article>

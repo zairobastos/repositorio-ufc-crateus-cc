@@ -1,0 +1,3 @@
+## Material relacionado a cadeira de Fundamentos de Banco de Dados. Disciplina muito importante para o estudante entender
+## os mecanismos por trás do armazenamento de informações pelos diversos softwares que utilizamos no nosso cotidiano.
+## Key 0x411
