@@ -1,0 +1,24 @@
+//<programa>	::= "<prog" <id>">" <declara> <bloco> "</prog>"
+//<declara> 		::= "var" <tipo> <id> ("," <id>)*; | "cons" <tipo> <id> ("," <id>)*;
+//<bloco> 		::= (<comando>)+
+//<comando> 	::= <cmdAtrib> | <cmdCond> | <cmdExpr>
+<cmdAtrib> 	::= <id> "=" <expr>;
+//<cmdCond> 	::= "<se ("<expr><opRel><expr>") > <entao>" <bloco> "</entao>" (<cmdCond2>)* "<senao>" <bloco> "</senao>"
+//<cmdCond2> 	::= "<senao se ("<expr> <opRel> <expr>")> <entao>" <bloco> "</entao>"
+//<cmdExpr> 	::= <expr> <operador> <expr> | <negacao>
+//<expr> 		::= <expr> "+" <termo> | <expr> "-" <termo> | <termo>
+//<termo> 		::= <termo> "*" <fator>  | <termo> "/" <fator>  | <fator> 
+//<fator> 		::= <numero> | <id> | "(" <expr> ")"
+//<tipo> 		::= "int" | "flut" | "carac" | "bolean"
+//<operador> 	::= <opLog> | <opRel> | <opArit>
+//<opLog>		::= "&&" | "||"
+//<opRel> 		::= ">" | "<" | ">=" | "<=" | "!=" | "=="
+//<opArit> 		::= "+" | "-" | "*" | "/"
+//<negacao> 	::= "nao ("<expr>")"
+//<numero> 	::= ("0".."9")+
+//<id> 		::= ("a".."z" | "A".."Z" | "_") ("a".."z" | "A".."Z" | "0".."9" | "_")*
+//<int> 		::= <numero>(<numero>)*
+//<flut> 		::= <numero>("."<numero>)*
+//<bolean> 		::= "true" | "false"
+//<carac> 		::= ("a".."z" | "A".."Z" | "_")*
+//<comentario>	::= "<!--" (<carac> | <numero>)* "-->"
