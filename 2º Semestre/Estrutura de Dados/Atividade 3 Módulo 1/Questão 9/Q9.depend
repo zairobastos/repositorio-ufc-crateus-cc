@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1611852785 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q9\imprime.c
+	<stdio.h>
+	<stdlib.h>
+	"imprime.h"
+
+1611851582 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q9\imprime.h
+
+1611852763 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q9\main.c
+	<stdio.h>
+	<stdlib.h>
+	"imprime.h"
+
