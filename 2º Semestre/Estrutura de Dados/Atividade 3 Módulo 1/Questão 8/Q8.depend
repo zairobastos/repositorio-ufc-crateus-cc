@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1611772156 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q8\main.c
+	<stdio.h>
+	<stdlib.h>
+	"quantidade.h"
+
+1611771750 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q8\quantidade.h
+
+1611772252 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q8\quantidade.c
+	<stdio.h>
+	<stdlib.h>
+	"quantidade.h"
+
