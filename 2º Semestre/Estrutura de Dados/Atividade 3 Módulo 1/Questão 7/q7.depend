@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1611665323 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q7\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vf.h"
+
+1611665497 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q7\vf.c
+	<stdio.h>
+	<stdlib.h>
+	"vf.h"
+
+1611423633 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q7\vf.h
+
