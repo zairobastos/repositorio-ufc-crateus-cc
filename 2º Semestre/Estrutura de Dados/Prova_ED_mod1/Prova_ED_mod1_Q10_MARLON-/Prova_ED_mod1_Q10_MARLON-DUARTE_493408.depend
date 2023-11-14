@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1612219932 source:/home/acer/Documentos/CC_semestre_2/Estrutura_de_dados/Prova_ED_mod1_MARLON-DUARTE_493408/Prova_ED_mod1_Q10_MARLON-DUARTE_493408/cabecalho.c
+	"cabecalho.h"
+
+1612215989 /home/acer/Documentos/CC_semestre_2/Estrutura_de_dados/Prova_ED_mod1_MARLON-DUARTE_493408/Prova_ED_mod1_Q10_MARLON-DUARTE_493408/cabecalho.h
+	<stdio.h>
+	<stdlib.h>
+
+1612215989 source:/home/acer/Documentos/CC_semestre_2/Estrutura_de_dados/Prova_ED_mod1_MARLON-DUARTE_493408/Prova_ED_mod1_Q10_MARLON-DUARTE_493408/main.c
+	<stdio.h>
+	<stdlib.h>
+	"cabecalho.h"
+

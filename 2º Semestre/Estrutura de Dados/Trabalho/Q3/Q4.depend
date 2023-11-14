@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1616889956 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"dubble.h"
+
+1616717096 c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q4\dubble.h
+
+1616889956 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q4\dubble.c
+	<stdio.h>
+	<stdlib.h>
+	"dubble.h"
+

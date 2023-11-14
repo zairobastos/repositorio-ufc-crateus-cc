@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1616793818 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"quick.h"
+
+1617300490 c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q5\quick.h
+
+1617300448 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q5\quick.c
+	<stdio.h>
+	<stdlib.h>
+	"quick.h"
+

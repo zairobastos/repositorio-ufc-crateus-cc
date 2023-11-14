@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1617298986 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"insertion.h"
+
+1617297943 c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q1\insertion.h
+

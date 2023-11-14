@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1617300001 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"merge.h"
+
+1617300220 c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q4\merge.h
+

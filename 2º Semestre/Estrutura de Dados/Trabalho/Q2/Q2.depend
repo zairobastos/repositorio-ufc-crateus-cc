@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1616713906 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"selection.h"
+
+1616697108 c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q2\selection.h
+
+1616847220 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\trabalho\q2\selection.c
+	<stdio.h>
+	<stdlib.h>
+	"selection.h"
+
