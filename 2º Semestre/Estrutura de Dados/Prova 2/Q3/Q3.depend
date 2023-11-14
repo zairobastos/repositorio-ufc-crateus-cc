@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1615914377 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\prova 2\q3\catalogo.c
+	<stdio.h>
+	<stdlib.h>
+	"catalogo.h"
+
+1615914377 c:\users\rayla\desktop\2º semestre\estrutura de dados\prova 2\q3\catalogo.h
+
+1615914520 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\prova 2\q3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"catalogo.h"
+

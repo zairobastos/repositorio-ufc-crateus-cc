@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1615808961 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\prova 2\q1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1615807691 c:\users\rayla\desktop\2º semestre\estrutura de dados\prova 2\q1\arvore.h
+
+1615811968 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\prova 2\q1\arvore.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
