@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1611775141 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q6\main.c
+	<stdio.h>
+	<stdlib.h>
+	"inverte.h"
+
+1611422655 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q6\inverte.h
+
+1611664980 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 3\q6\inverte.c
+	<stdio.h>
+	<stdlib.h>
+	"inverte.h"
+
