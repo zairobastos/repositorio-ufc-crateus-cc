@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1617572067 source:/home/acer/Arquivos_CodeBlocks/Trabalho_Final/main.c
+	<stdio.h>
+	<stdlib.h>
+	"vetor_produtos.h"
+
+1617625318 source:/home/acer/Arquivos_CodeBlocks/Trabalho_Final/vetor_produtos.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"vetor_produtos.h"
+
+1617571393 /home/acer/Arquivos_CodeBlocks/Trabalho_Final/vetor_produtos.h
+
+1617572067 source:/home/acer/Documentos/CC_semestre_2/Estrutura_de_dados/Estrutura_de_Dados_III/Trab_FINAL_ED_mod3_MARLON-DUARTE_493408/Trabalho_Final/main.c
+	<stdio.h>
+	<stdlib.h>
+	"vetor_produtos.h"
+
+1617571393 /home/acer/Documentos/CC_semestre_2/Estrutura_de_dados/Estrutura_de_Dados_III/Trab_FINAL_ED_mod3_MARLON-DUARTE_493408/Trabalho_Final/vetor_produtos.h
+
+1617628052 source:/home/acer/Documentos/CC_semestre_2/Estrutura_de_dados/Estrutura_de_Dados_III/Trab_FINAL_ED_mod3_MARLON-DUARTE_493408/Trabalho_Final/vetor_produtos.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"vetor_produtos.h"
+
