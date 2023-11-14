@@ -1,0 +1,294 @@
+% Nome: Raylander Marques Melo     Matrícula: 494563
+main :-
+    modelo([X1,X2,X3,X4,X5]),
+	imprime_lista([X1,X2,X3,X4,X5]),
+    fail.
+
+main :-
+    true.
+
+modelo([
+       (Camiseta_1, Nome_1, Assunto_1, Autor_1, Pagina_1, Preco_1),
+       (Camiseta_2, Nome_2, Assunto_2, Autor_2, Pagina_2, Preco_2),
+       (Camiseta_3, Nome_3, Assunto_3, Autor_3, Pagina_3, Preco_3),
+       (Camiseta_4, Nome_4, Assunto_4, Autor_4, Pagina_4, Preco_4),
+       (Camiseta_5, Nome_5, Assunto_5, Autor_5, Pagina_5, Preco_5)
+       ]) :-
+    
+%Camisetas
+camiseta(Camiseta_1),
+camiseta(Camiseta_2),
+camiseta(Camiseta_3),
+camiseta(Camiseta_4),
+camiseta(Camiseta_5),
+    
+%O cliente de camiseta Amarela está em algum lugar á esquerda do cliente de camiseta Azul. 
+(   
+((Camiseta_1==amarela;Camiseta_2==amarela;Camiseta_3==amarela;Camiseta_4==amarela),Camiseta_5==azul);
+((Camiseta_1==amarela;Camiseta_2==amarela;Camiseta_3==amarela),Camiseta_4==azul);
+((Camiseta_1==amarela;Camiseta_2==amarela),Camiseta_3==azul);
+(Camiseta_1==amarela,Camiseta_2==azul)
+),  
+    
+diferentedetodos([Camiseta_1,Camiseta_2,Camiseta_3,Camiseta_4,Camiseta_5]),
+    
+%Nomes
+nome(Nome_1),
+nome(Nome_2),
+nome(Nome_3),
+nome(Nome_4),
+nome(Nome_5),
+    
+%O homem de Vermelho está em algum lugar entre o Gil e o homem de Amarelo, nessa ordem.
+(   
+(Nome_1==gil,Camiseta_2==vermelha,(Camiseta_3==amarela;Camiseta_4==amarela;Camiseta_5==amarela));
+(Nome_1==gil,Camiseta_3==vermelha,(Camiseta_4==amarela;Camiseta_5==amarela));
+(Nome_1==gil,Camiseta_4==vermelha,Camiseta_5==amarela);
+(Nome_2==gil,Camiseta_3==vermelha,(Camiseta_4==amarela;Camiseta_5==amarela));
+(Nome_2==gil,Camiseta_4==vermelha,Camiseta_5==amarela);
+(Nome_3==gil,Camiseta_4==vermelha,Camiseta_5==amarela)
+),
+    
+diferentedetodos([Nome_1,Nome_2,Nome_3,Nome_4,Nome_5]), 
+    
+%Assuntos
+assunto(Assunto_1),
+assunto(Assunto_2),
+assunto(Assunto_3),
+assunto(Assunto_4),
+assunto(Assunto_5),
+    
+% O livro de Fotografia está sendo comprado pelo cliente da terceira posição.
+(Assunto_3==fotografia),
+    
+% Roberto está exatamente à esquerda de quem escolheu um livro de Artes.
+(   
+(Nome_1==roberto,Assunto_2==artes);   
+(Nome_2==roberto,Assunto_3==artes); 
+(Nome_3==roberto,Assunto_4==artes);
+(Nome_4==roberto,Assunto_5==artes)
+),
+    
+diferentedetodos([Assunto_1,Assunto_2,Assunto_3,Assunto_4,Assunto_5]),
+    
+%Autores
+autor(Autor_1),
+autor(Autor_2),
+autor(Autor_3),
+autor(Autor_4),
+autor(Autor_5), 
+    
+% Na terceira posição está o homem que vai comprar um livro do autor Português.
+(Autor_3==português),
+    
+% Em uma das pontas está o homem que escolheu um livro de autor asiático.
+(Autor_1==japonês;Autor_5==japonês),
+    
+% Claudinei está comprando um livro cujo autor é da Oceania.
+(
+(Nome_1==claudinei,Autor_1==australiano);
+(Nome_2==claudinei,Autor_2==australiano);
+(Nome_3==claudinei,Autor_3==australiano);
+(Nome_4==claudinei,Autor_4==australiano);
+(Nome_5==claudinei,Autor_5==australiano)
+),
+    
+% Agnaldo está exatamente à direita do cliente que está comprando um livro do autor Australiano.
+(
+(Autor_1==australiano,Nome_2==agnaldo);
+(Autor_2==australiano,Nome_3==agnaldo);
+(Autor_3==australiano,Nome_4==agnaldo);
+(Autor_4==australiano,Nome_5==agnaldo)
+),    
+    
+diferentedetodos([Autor_1,Autor_2,Autor_3,Autor_4,Autor_5]), 
+  
+%Páginas
+pagina(Pagina_1),
+pagina(Pagina_2),
+pagina(Pagina_3),
+pagina(Pagina_4),
+pagina(Pagina_5),
+    
+%Quem escolheu o livro de 150 páginas está em algum lugar entre quem escolheu um livro de Economia e quem escolheu um livro de Fotografia, nessa ordem.   
+(
+(Assunto_1 == economia, Pagina_2 == 150, (Assunto_3 == fotografia; Assunto_4 == fotografia; Assunto_5 == fotografia));
+(Assunto_1 == economia, Pagina_3 == 150, (Assunto_4 == fotografia; Assunto_5 == fotografia));
+(Assunto_1 == economia, Pagina_4 == 150, Assunto_5 == fotografia);
+(Assunto_2 == economia, Pagina_3 == 150, (Assunto_4 == fotografia; Assunto_5 == fotografia));
+(Assunto_2 == economia, Pagina_4 == 150, Assunto_5 == fotografia);
+(Assunto_3 == economia, Pagina_4 == 150, Assunto_5 == fotografia)
+),
+
+%Quem está comprando o livro do autor Angolano está ao lado de quem está comprando o livro de 200 páginas.
+(   
+(Pagina_1==200,Autor_2==angolano);
+(Pagina_2==200,(Autor_1==angolano;Autor_3==angolano));
+(Pagina_3==200,(Autor_2==angolano;Autor_4==angolano));
+(Pagina_4==200,(Autor_3==angolano;Autor_5==angolano));
+(Pagina_5==200,Autor_4==angolano)
+),
+    
+%O homem que escolheu o livro com menos páginas está ao lado do homem que escolheu uma Biografia.
+(   
+(Assunto_1==biografia,Pagina_2==100);    
+(Assunto_2==biografia,(Pagina_1==100;Pagina_3==100));
+(Assunto_3==biografia,(Pagina_2==100;Pagina_4==100));
+(Assunto_4==biografia,(Pagina_3==100;Pagina_5==100));
+(Assunto_5==biografia,Pagina_4==100)   
+),
+    
+% Claudinei está comprando o livro de 100 páginas.
+(   
+(Nome_1==claudinei,Pagina_1==100);
+(Nome_2==claudinei,Pagina_2==100);
+(Nome_3==claudinei,Pagina_3==100);
+(Nome_4==claudinei,Pagina_4==100);
+(Nome_5==claudinei,Pagina_5==100)
+),
+
+diferentedetodos([Pagina_1,Pagina_2,Pagina_3,Pagina_4,Pagina_5]),
+
+%Preços
+preco(Preco_1),
+preco(Preco_2),
+preco(Preco_3),
+preco(Preco_4),
+preco(Preco_5),
+    
+% Na segunda posição está o cliente que vai comprar um livro de R$ 30.
+(Preco_2==30),
+    
+%O cliente que está comprando o livro de R$ 40 está exatamente à esquerda do cliente que está comprando o livro de R$ 50.  
+(   
+(Preco_1==40, Preco_2==50);
+(Preco_2==40, Preco_3==50); 
+(Preco_3==40, Preco_4==50);
+(Preco_4==40, Preco_5==50)  
+),
+    
+% O livro mais caro está sendo comprado pelo cliente que está exatamente à direita de Simão.
+(   
+(Nome_1==simão,Preco_2==60);
+(Nome_2==simão,Preco_3==60);
+(Nome_3==simão,Preco_4==60);
+(Nome_4==simão,Preco_5==60)
+),
+    
+% O homem de camiseta Branca está exatamente à direita do homem que escolheu o livro de R$ 40.
+(   
+(Preco_1==40,Camiseta_2==branca);  
+(Preco_2==40,Camiseta_3==branca);
+(Preco_3==40,Camiseta_4==branca);
+(Preco_4==40,Camiseta_5==branca)
+),
+    
+    
+% O cliente de Vermelho está em algum lugar entre o cliente que escolheu o livro mais barato e o cliente que escolheu o livro do autor Japonês, nessa ordem.
+(   
+(Preco_1==20,Camiseta_2==vermelha,(Autor_3==japonês;Autor_4==japonês;Autor_5==japonês));   
+(Preco_1==20,Camiseta_3==vermelha,(Autor_4==japonês;Autor_5==japonês));
+(Preco_1==20,Camiseta_4==vermelha,Autor_5==japonês);
+(Preco_2==20,Camiseta_3==vermelha,(Autor_4==japonês,Autor_5==japonês));
+(Preco_2==20,Camiseta_4==vermelha,Autor_5==japonês);
+(Preco_3==20,Camiseta_4==vermelha,Autor_5==japonês)
+),
+    
+%Quem está comprando o livro de Poesia está exatamente à esquerda de quem está comprando o livro de R$ 60.
+(
+(Assunto_1 == poesia, Preco_2 == 60);
+(Assunto_2 == poesia, Preco_3 == 60);
+(Assunto_3 == poesia, Preco_4 == 60);
+(Assunto_4 == poesia, Preco_5 == 60)
+),    
+    
+    
+% O homem que escolheu o livro do autor Português está ao lado do homem que escolheu o livro de R$ 40.
+
+(   
+(Preco_1==40,Autor_2==português);
+(Preco_2==40,(Autor_1==português;Autor_3==português));
+(Preco_3==40,(Autor_2==português;Autor_4==português));
+(Preco_4==40,(Autor_3==português;Autor_5==português));
+(Preco_5==40,Autor_4==português)
+),
+    
+% O livro de 200 páginas foi escolhido pelo cliente que está exatamente à esquerda do cliente que escolheu o livro de R$ 40.
+(
+(Pagina_1 == 200, Preco_2 == 40);
+(Pagina_2 == 200, Preco_3 == 40);
+(Pagina_3 == 200, Preco_4 == 40);
+(Pagina_4 == 200, Preco_5 == 40)
+),   
+    
+% Quem está comprando o livro de R$ 30 está ao lado de quem está comprando o livro de 250 páginas.
+(   
+(Pagina_1==250,Preco_2==30);
+(Pagina_2==250,(Preco_1==30;Preco_3==30));
+(Pagina_3==250,(Preco_2==30;Preco_4==30));
+(Pagina_4==250,(Preco_3==30;Preco_5==30));
+(Pagina_5==250,Preco_4==30)
+),   
+    
+diferentedetodos([Preco_1,Preco_2,Preco_3,Preco_4,Preco_5]).
+
+%Final do modelo
+   
+%fatos
+
+%Camisetas
+camiseta(amarela).
+camiseta(azul).
+camiseta(branca).
+camiseta(verde).
+camiseta(vermelha).
+    
+%Nomes
+nome(agnaldo).
+nome(claudinei).
+nome(gil).
+nome(roberto).
+nome(simão).
+
+%Assuntos
+assunto(artes).
+assunto(biografia).
+assunto(economia).
+assunto(poesia).
+assunto(fotografia).
+
+%Autores
+autor(australiano).
+autor(angolano).
+autor(brasileiro).
+autor(japonês).
+autor(português).
+
+%Páginas
+pagina(100).
+pagina(150).
+pagina(200).
+pagina(250).
+pagina(300).
+
+%Preços
+preco(20).
+preco(30).
+preco(40).
+preco(50).
+preco(60).
+
+%Definição de diferentedetodos
+
+diferentedetodos([]).
+diferentedetodos([Y|Z]):- not(member(Y,Z)), 
+    			  diferentedetodos(Z).
+
+
+imprime_lista([]):- write('\n Impressão finalizada.\n').
+
+imprime_lista([Y|Z]):- write('\n Informações sobre o cliente:\n'),
+    					write(Y), write('\n ------------------------------------------------------------ \n'),
+    					imprime_lista(Z).
+
+
