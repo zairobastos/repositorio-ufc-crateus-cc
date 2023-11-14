@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1612975310 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 1 modulo 2\q3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1613076051 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 1 modulo 2\q3\lista.h
+
+1612976603 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\atividade 1 modulo 2\q3\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1613429429 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\atividade 1 modulo 2\q3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1613076051 c:\users\rayla\desktop\2º semestre\estrutura de dados\atividade 1 modulo 2\q3\lista.h
+
+1613506606 source:c:\users\rayla\desktop\2º semestre\estrutura de dados\atividade 1 modulo 2\q3\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
