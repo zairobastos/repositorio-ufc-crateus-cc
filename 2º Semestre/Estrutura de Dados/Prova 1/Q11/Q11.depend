@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1612222534 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\prova 1\q11\main.c
+	<stdio.h>
+	<stdlib.h>
+	"caracteres.h"
+
+1612222644 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\prova 1\q11\caracteres.h
+
+1612222644 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\prova 1\q11\caracteres.c
+	<stdio.h>
+	<stdlib.h>
+	"caracteres.h"
+

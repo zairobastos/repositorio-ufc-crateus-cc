@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1612199402 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\prova 1\q6\main.c
+	<stdio.h>
+	<stdlib.h>
+	"esfera.h"
+
+1612199289 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\prova 1\q6\esfera.h
+
+1612213606 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\prova 1\q6\esfera.c
+	<stdio.h>
+	<stdlib.h>
+	"esfera.h"
+	<math.h>
+

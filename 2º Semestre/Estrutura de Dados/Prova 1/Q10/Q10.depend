@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1612216169 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\prova 1\q10\main.c
+	<stdio.h>
+	<stdlib.h>
+	"teste.h"
+
+1612216021 c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\prova 1\q10\teste.h
+
+1612217479 source:c:\users\rayla\onedrive\Área de trabalho\2º semestre\estrutura de dados\prova 1\q10\teste.c
+	<stdio.h>
+	<stdlib.h>
+	"teste.h"
+
