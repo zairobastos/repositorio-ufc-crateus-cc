@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1613072286 source:d:\documentos\faculdade\programas\filadinamica\fd.c
+	<stdio.h>
+	<stdlib.h>
+	"Fd.h"
+
+1613072309 d:\documentos\faculdade\programas\filadinamica\fd.h
+
+1613071990 source:d:\documentos\faculdade\programas\filadinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"Fd.h"
+
