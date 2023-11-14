@@ -1,0 +1,4 @@
+## Material relacionado a cadeira de Estrutura de Dados. Aqui a gente ver um pouco da construção dos principais
+## algoritmos que organizam nossos sistemas em tarefas que nos ajudam todos os dias como: Organizar pastas, 
+## Desfazer ações em softwares, armazenar informações, dentre outras.
+## Key 0x411
