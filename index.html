@@ -29,15 +29,161 @@
 			<div>
 				<form
 					action=""
-					class="bg-[#f9f9f9] h-12 flex border border-solid border-[#E6E6E6] flex-row flex-wrap items-center rounded-md border-[#333] hover:shadow p-2"
+					class="bg-[#f9f9f9] h-12 flex border border-solid border-[#E6E6E6] flex-row flex-wrap items-center rounded-md border-[#333] hover:shadow p-2 gap-2"
 				>
-					<input
-						type="text"
-						name="buscar"
-						id="buscar"
-						placeholder="Buscar"
-						class="bg-transparent h-full outline-none px-4 placeholder:text-[#3C3C3C] text-[#3C3C3C] border-transparent text-xl active:border-transparent"
-					/>
+					<select
+						name="disciplina"
+						id="disciplina"
+						class="bg-transparent h-full outline-none px-4 placeholder:text-[#3C3C3C] text-[#3C3C3C] border-none text-xl"
+					>
+						<option disabled selected>
+							Quem procura acha... rs
+						</option>
+						<optgroup label="1º semestre">
+							<option value="Fundamentos de programação">
+								Fundamentos de programação
+							</option>
+							<option value="Matemática Básica">
+								Matemática Básica
+							</option>
+							<option value="Introdução à Ciência da Computação">
+								Introdução à Ciência da Computação
+							</option>
+							<option value="Circuitos Digitais">
+								Circuitos Digitais
+							</option>
+							<option value="Informática e Sociedade">
+								Informática e Sociedade
+							</option>
+							<option value="Cálculo Diferencial e Integral I">
+								Cálculo Diferencial e Integral I
+							</option>
+						</optgroup>
+						<optgroup label="2º semestre">
+							<option value="Programação Orientada a Objetos">
+								Programação Orientada a Objetos
+							</option>
+							<option value="Estruturas de Dados">
+								Estruturas de Dados
+							</option>
+							<option value="Matemática Básica">
+								Matemática Básica
+							</option>
+							<option value="Álgebra Linear">
+								Álgebra Linear
+							</option>
+							<option value="Arquitetura de Computadores">
+								Arquitetura de Computadores
+							</option>
+						</optgroup>
+							<optgroup label="3º Semestre">
+								<option value="Sistemas Operacionais">
+									Sistemas Operacionais
+								</option>
+								<option value="Estrutura de Dados Avançada">
+									Estrutura de Dados Avançada
+								</option>
+								<option value="Lógica para a Computação">
+									Lógica para a Computação
+								</option>
+								<option value="Probabilidade e Estatísticas">
+									Probabilidade e Estatísticas
+								</option>
+								<option value="Fundamentos de Banco de Dados">
+									Fundamentos de Banco de Dados
+								</option>
+								<option value="Projeto Integrador I">
+									Projeto Integrador I
+								</option>
+							</optgroup>
+							<optgroup label="4º Semestre">
+								<option value="Programação Funcional">
+									Programação Funcional
+								</option>
+								<option value="Linguagens Formais e Autômatos">
+									Linguagens Formais e Autômatos
+								</option>
+								<option value="Análise e Projeto de Sistemas">
+									Análise e Projeto de Sistemas
+								</option>
+								<option value="Redes de Computadores">
+									Redes de Computadores
+								</option>
+								<option value="Computação Gráfica I">
+									Computação Gráfica I
+								</option>
+								<option value="Projeto Integrador II">
+									Projeto Integrador II
+								</option>
+							</optgroup>
+							<optgroup label="5º Semestre">
+								<option
+									value="Compiladores e Linguagens de Programação"
+								>
+									Compiladores e Linguagens de Programação
+								</option>
+								<option
+									value="Desenvolvimento de Software para Web"
+								>
+									Desenvolvimento de Software para Web
+								</option>
+								<option value="Algoritmos em Grafos">
+									Algoritmos em Grafos
+								</option>
+								<option value="Cálculo Númerico">
+									Cálculo Númerico
+								</option>
+								<option value="Projeto Integrador III">
+									Projeto Integrador III
+								</option>
+							</optgroup>
+							<optgroup label="6º Semestre">
+								<option value="Engenharia de Software">
+									Engenharia de Software
+								</option>
+								<option value="Sistemas Distríbuidos">
+									Sistemas Distríbuidos
+								</option>
+								<option value="Inteligência Artificial">
+									Inteligência Artificial
+								</option>
+								<option value="Projeto e Análise de Algoritmos">
+									Projeto e Análise de Algoritmos
+								</option>
+								<option value="Projeto Integrador IV">
+									Projeto Integrador IV
+								</option>
+							</optgroup>
+							<optgroup label="7º Semestre">
+								<option
+									value="Trabalho de Conclusão de Curso I"
+								>
+									Trabalho de Conclusão de Curso I
+								</option>
+								<option value="Estágio Supervisionado I">
+									Estágio Supervisionado I
+								</option>
+								<option value="Teoria da Computação">
+									Teoria da Computação
+								</option>
+								<option
+									value="Projeto de Pesquisa Científica e Tecnológica"
+								>
+									Projeto de Pesquisa Científica e Tecnológica
+								</option>
+							</optgroup>
+							<optgroup label="8º Semestre">
+								<option
+									value="Trabalho de Conclusão de Curso II"
+								>
+									Trabalho de Conclusão de Curso II
+								</option>
+								<option value="Estágio Supervisionado II">
+									Estágio Supervisionado II
+								</option>
+							</optgroup>
+						</select>
+					</select>
 					<button type="submit" class="flex text-3xl pr-3">
 						<i
 							class="ph ph-magnifying-glass text-xl font-semibold text-[#3C3C3C]"
@@ -67,9 +213,8 @@
 						<div class="flex flex-col gap-2.5">
 							<h2 class="text-2xl font-semibold">Semestres</h2>
 							<p class="text-[#7C7C7C] text-lg">
-								Acesse o fluxograma das disciplinas por semestre
-								ou selecione o semestre que deseja ver as
-								disciplinas.
+								Visualize o fluxograma do curso e veja as carga
+								horária de cada disciplina
 							</p>
 						</div>
 						<div class="flex flex-row justify-end">
@@ -102,7 +247,7 @@
 						</div>
 						<div class="flex flex-row justify-end">
 							<a
-								href=""
+								href="./disciplinas.html"
 								class="flex items-center w-min text-center items-center text-[#F54A48] font-bold"
 								>Acessar
 								<i class="ph ph-caret-right font-bold"></i

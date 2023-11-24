@@ -16,7 +16,7 @@
 	</head>
 	<body class="bg-[#f2f2f2] font-['Poppins']">
 		<header
-			class="flex items-center z-10 justify-between w-full flex-row flex-wrap px-14 py-3.5 bg-[#fff] shadow-lg fixed top-0"
+			class="flex items-center justify-between w-full flex-row flex-wrap px-14 py-3.5 bg-[#fff] shadow-lg fixed top-0"
 		>
 			<div class="w-1/4 flex items-center justify-start gap-3">
 				<img
@@ -29,15 +29,161 @@
 			<div>
 				<form
 					action=""
-					class="bg-[#f9f9f9] h-12 flex border border-solid border-[#E6E6E6] flex-row flex-wrap items-center rounded-md border-[#333] hover:shadow p-2"
+					class="bg-[#f9f9f9] h-12 flex border border-solid border-[#E6E6E6] flex-row flex-wrap items-center rounded-md border-[#333] hover:shadow p-2 gap-2"
 				>
-					<input
-						type="text"
-						name="buscar"
-						id="buscar"
-						placeholder="Buscar"
-						class="bg-transparent h-full outline-none px-4 placeholder:text-[#3C3C3C] text-[#3C3C3C] border-transparent text-xl active:border-transparent"
-					/>
+					<select
+						name="disciplina"
+						id="disciplina"
+						class="bg-transparent h-full outline-none px-4 placeholder:text-[#3C3C3C] text-[#3C3C3C] border-none text-xl"
+					>
+						<option disabled selected>
+							Quem procura acha... rs
+						</option>
+						<optgroup label="1º semestre">
+							<option value="Fundamentos de programação">
+								Fundamentos de programação
+							</option>
+							<option value="Matemática Básica">
+								Matemática Básica
+							</option>
+							<option value="Introdução à Ciência da Computação">
+								Introdução à Ciência da Computação
+							</option>
+							<option value="Circuitos Digitais">
+								Circuitos Digitais
+							</option>
+							<option value="Informática e Sociedade">
+								Informática e Sociedade
+							</option>
+							<option value="Cálculo Diferencial e Integral I">
+								Cálculo Diferencial e Integral I
+							</option>
+						</optgroup>
+						<optgroup label="2º semestre">
+							<option value="Programação Orientada a Objetos">
+								Programação Orientada a Objetos
+							</option>
+							<option value="Estruturas de Dados">
+								Estruturas de Dados
+							</option>
+							<option value="Matemática Básica">
+								Matemática Básica
+							</option>
+							<option value="Álgebra Linear">
+								Álgebra Linear
+							</option>
+							<option value="Arquitetura de Computadores">
+								Arquitetura de Computadores
+							</option>
+						</optgroup>
+							<optgroup label="3º Semestre">
+								<option value="Sistemas Operacionais">
+									Sistemas Operacionais
+								</option>
+								<option value="Estrutura de Dados Avançada">
+									Estrutura de Dados Avançada
+								</option>
+								<option value="Lógica para a Computação">
+									Lógica para a Computação
+								</option>
+								<option value="Probabilidade e Estatísticas">
+									Probabilidade e Estatísticas
+								</option>
+								<option value="Fundamentos de Banco de Dados">
+									Fundamentos de Banco de Dados
+								</option>
+								<option value="Projeto Integrador I">
+									Projeto Integrador I
+								</option>
+							</optgroup>
+							<optgroup label="4º Semestre">
+								<option value="Programação Funcional">
+									Programação Funcional
+								</option>
+								<option value="Linguagens Formais e Autômatos">
+									Linguagens Formais e Autômatos
+								</option>
+								<option value="Análise e Projeto de Sistemas">
+									Análise e Projeto de Sistemas
+								</option>
+								<option value="Redes de Computadores">
+									Redes de Computadores
+								</option>
+								<option value="Computação Gráfica I">
+									Computação Gráfica I
+								</option>
+								<option value="Projeto Integrador II">
+									Projeto Integrador II
+								</option>
+							</optgroup>
+							<optgroup label="5º Semestre">
+								<option
+									value="Compiladores e Linguagens de Programação"
+								>
+									Compiladores e Linguagens de Programação
+								</option>
+								<option
+									value="Desenvolvimento de Software para Web"
+								>
+									Desenvolvimento de Software para Web
+								</option>
+								<option value="Algoritmos em Grafos">
+									Algoritmos em Grafos
+								</option>
+								<option value="Cálculo Númerico">
+									Cálculo Númerico
+								</option>
+								<option value="Projeto Integrador III">
+									Projeto Integrador III
+								</option>
+							</optgroup>
+							<optgroup label="6º Semestre">
+								<option value="Engenharia de Software">
+									Engenharia de Software
+								</option>
+								<option value="Sistemas Distríbuidos">
+									Sistemas Distríbuidos
+								</option>
+								<option value="Inteligência Artificial">
+									Inteligência Artificial
+								</option>
+								<option value="Projeto e Análise de Algoritmos">
+									Projeto e Análise de Algoritmos
+								</option>
+								<option value="Projeto Integrador IV">
+									Projeto Integrador IV
+								</option>
+							</optgroup>
+							<optgroup label="7º Semestre">
+								<option
+									value="Trabalho de Conclusão de Curso I"
+								>
+									Trabalho de Conclusão de Curso I
+								</option>
+								<option value="Estágio Supervisionado I">
+									Estágio Supervisionado I
+								</option>
+								<option value="Teoria da Computação">
+									Teoria da Computação
+								</option>
+								<option
+									value="Projeto de Pesquisa Científica e Tecnológica"
+								>
+									Projeto de Pesquisa Científica e Tecnológica
+								</option>
+							</optgroup>
+							<optgroup label="8º Semestre">
+								<option
+									value="Trabalho de Conclusão de Curso II"
+								>
+									Trabalho de Conclusão de Curso II
+								</option>
+								<option value="Estágio Supervisionado II">
+									Estágio Supervisionado II
+								</option>
+							</optgroup>
+						</select>
+					</select>
 					<button type="submit" class="flex text-3xl pr-3">
 						<i
 							class="ph ph-magnifying-glass text-xl font-semibold text-[#3C3C3C]"
@@ -52,383 +198,20 @@
 				><i class="ph ph-github-logo"></i> GITHUB</a
 			>
 		</header>
-		<main
-			class="absolute mt-56 z-0 w-4/5 ml-[10%] flex flex-col bg-white rounded-md overflow-auto"
+		<figure>
+			<img
+				src="./fluxograma.png"
+				alt="fluxogrma"
+				class="mt-56 mx-auto w-4/5"
+			/>
+		</figure>
+		<footer
+			class="mt-10 mb-6 bottom-0 w-4/5 ml-[10%] flex flex-row justify-between"
 		>
-			<header>
-				<nav>
-					<ul class="flex flex-row w-4/5 flex-wrap fixed">
-						<li
-							class="border-2 border-b-0 text-xl bg-white border-[#ccc] font-semibold w-1/2 p-2 flex items-center justify-center rounded-t"
-						>
-							Fluxograma
-						</li>
-						<li
-							class="border-b-2 text-xl bg-[#f2f2f2] transition ease-in-out duration-300 hover:bg-white border-[#ccc] font-semibold w-1/2 p-2 flex items-center justify-center"
-						>
-							Disciplinas
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<div
-				class="flex w-max z-10 bg-white flex-row mt-11 gap-3 px-3 pb-7 rounded-b pt-12 border-x-2 border-b-2 border-[#ccc] flex-nowrap not-prose relative overflow-auto"
+			<a href="./Fluxograma_CC_2019.pdf" target="_blank">
+				<i class="ph ph-file-arrow-down"></i> Baixar Fluxograma</a
 			>
-				<div class="w-1/4 flex flex-col gap-3">
-					<h3 class="text-center text-xl font-semibold">
-						1º Semestre
-					</h3>
-					<div class="flex flex-col gap-2">
-						<button
-							class="bg-[#C4D2EB] hover:bg-white focus:bg-[#00ff00] transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="fup"
-						>
-							Fundamentos de programação
-						</button>
-						<button
-							class="bg-[#C4D2EB] focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="mb"
-						>
-							Matemática Básica
-						</button>
-						<button
-							class="bg-[#C4D2EB] focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Introdução à Ciência da Computação
-						</button>
-						<button
-							class="bg-[#C4D2EB] focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="cd"
-						>
-							Circuitos Digitais
-						</button>
-						<button
-							class="bg-[#C4D2EB] focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Informática e Sociedade
-						</button>
-						<button
-							id="calc"
-							class="bg-[#C4D2EB] focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Cálculo Diferencial e Integral I
-						</button>
-					</div>
-				</div>
-				<div class="w-1/4 flex flex-col gap-3">
-					<h3 class="text-center text-xl font-semibold">
-						2º Semestre
-					</h3>
-					<div class="flex flex-col gap-2">
-						<button
-							class="bg-[#C4D2EB] fup hover:bg-white focus:bg-[#00ff00] transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="poo"
-						>
-							Programação Orientada a Objetos
-						</button>
-						<button
-							class="bg-[#C4D2EB] fup focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="ed"
-						>
-							Estruturas de Dados
-						</button>
-						<button
-							class="bg-[#C4D2EB] mb focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="md"
-						>
-							Matemática Discreta
-						</button>
-						<button
-							class="bg-[#C4D2EB] mb focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="al"
-						>
-							Álgebra Linear
-						</button>
-						<button
-							class="bg-[#C4D2EB] cd focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="arq"
-						>
-							Arquitetura de Computadores
-						</button>
-					</div>
-				</div>
-				<div class="w-1/4 flex flex-col gap-3">
-					<h3 class="text-center text-xl font-semibold">
-						3º Semestre
-					</h3>
-					<div class="flex flex-col gap-2">
-						<button
-							class="bg-[#C4D2EB] arq hover:bg-white focus:bg-[#00ff00] transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="so"
-						>
-							Sistemas Operacionais
-						</button>
-						<button
-							class="bg-[#C4D2EB] ed focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Estruturas de Dados Avançada
-						</button>
-						<button
-							class="bg-[#C4D2EB] md focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="log"
-						>
-							Lógica para a Computação
-						</button>
-						<button
-							class="bg-[#C4D2EB] md focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Probabilidade e Estatísticas
-						</button>
-						<button
-							class="bg-[#C4D2EB] poo focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="bd"
-						>
-							Fundamentos de Banco de Dados
-						</button>
-						<button
-							class="bg-[#C4D2EB] focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Projeto Integrador I
-						</button>
-					</div>
-				</div>
-				<div class="w-1/4 flex flex-col gap-3">
-					<h3 class="text-center text-xl font-semibold">
-						4º Semestre
-					</h3>
-					<div class="flex flex-col gap-2">
-						<button
-							class="bg-[#C4D2EB] ed hover:bg-white focus:bg-[#00ff00] transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Programação Funcional
-						</button>
-						<button
-							class="bg-[#C4D2EB] md focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="lfa"
-						>
-							Linguagens Formais e Autômatos
-						</button>
-						<button
-							class="bg-[#C4D2EB] poo focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="aps"
-						>
-							Análise e projeto de sistemas
-						</button>
-						<button
-							class="bg-[#C4D2EB] arq focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Redes de Computadores
-						</button>
-						<button
-							class="bg-[#C4D2EB] al focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Computação Gráfica I
-						</button>
-						<button
-							class="bg-[#C4D2EB] focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Projeto Integrador II
-						</button>
-					</div>
-				</div>
-				<div class="w-1/4 flex flex-col gap-3">
-					<h3 class="text-center text-xl font-semibold">
-						5º Semestre
-					</h3>
-					<div class="flex flex-col gap-2">
-						<button
-							class="bg-[#C4D2EB] lfa hover:bg-white focus:bg-[#00ff00] transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Compiladores e Linguagens de Programação
-						</button>
-						<button
-							class="bg-[#C4D2EB] poo focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="web"
-						>
-							Desenvolvimento de Software para Web
-						</button>
-						<button
-							class="bg-[#C4D2EB] ed focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="graf"
-						>
-							Algoritmos em Grafos
-						</button>
-						<button
-							class="bg-[#C4D2EB] calc focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Cálculo Numérico
-						</button>
-						<button
-							class="bg-[#C4D2EB] focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Projeto Integrador III
-						</button>
-					</div>
-				</div>
-				<div class="w-1/4 flex flex-col gap-3">
-					<h3 class="text-center text-xl font-semibold">
-						6º Semestre
-					</h3>
-					<div class="flex flex-col gap-2">
-						<button
-							class="bg-[#C4D2EB] aps hover:bg-white focus:bg-[#00ff00] transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="es"
-						>
-							Engenharia de Software
-						</button>
-						<button
-							class="bg-[#C4D2EB] so focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Sistemas Distribuídos
-						</button>
-						<button
-							class="bg-[#C4D2EB] log focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Inteligência Artificial
-						</button>
-						<button
-							class="bg-[#C4D2EB] graf focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="paa"
-						>
-							Projeto e Análise de Algoritmos
-						</button>
-						<button
-							class="bg-[#C4D2EB] focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Projeto Integrador IV
-						</button>
-					</div>
-				</div>
-				<div class="w-1/4 flex flex-col gap-3">
-					<h3 class="text-center text-xl font-semibold">
-						7º Semestre
-					</h3>
-					<div class="flex flex-col gap-2">
-						<button
-							class="bg-[#C4D2EB] hover:bg-white focus:bg-[#00ff00] transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="tcc"
-						>
-							Trabalho de Conclusão de Curso I
-						</button>
-						<button
-							class="bg-[#C4D2EB] bd web es focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-							id="es1"
-						>
-							Estágio Supervisionado I
-						</button>
-						<button
-							class="bg-[#C4D2EB] lfa focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Teoria da Computação
-						</button>
-						<button
-							class="bg-[#C4D2EB] paa focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Projeto de Pesquisa Científica e Tecnológica
-						</button>
-					</div>
-				</div>
-				<div class="w-1/4 flex flex-col gap-3">
-					<h3 class="text-center text-xl font-semibold">
-						8º Semestre
-					</h3>
-					<div class="flex flex-col gap-2">
-						<button
-							class="bg-[#C4D2EB] tcc hover:bg-white focus:bg-[#00ff00] transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Trabalho de Conclusão de Curso II
-						</button>
-						<button
-							class="bg-[#C4D2EB] es1 focus:bg-[#00ff00] hover:bg-white transition duration-300 ease-in-out border text-lg border-[#000000] text-center p-3 rounded"
-						>
-							Estágio Supervisionado II
-						</button>
-					</div>
-				</div>
-			</div>
-		</main>
-		<div class="mt-[860px] absolute w-1/4 mr-[10%] right-0">
-			<h4 class="text-lg">Resumo do Curso</h4>
-			<table
-				class="border-collapse table-fixed w-full text-sm mb-10 mt-4"
-			>
-				<thead></thead>
-				<tbody>
-					<tr>
-						<td class="py-2 bg-white border-b-2 border-[#333] pl-2">
-							Componentes Obrigatórios
-						</td>
-						<td
-							class="py-2 w-1/4 bg-white text-center border-b-2 border-[#333]"
-						>
-							2.144 h
-						</td>
-					</tr>
-					<tr>
-						<td class="py-2 border-b-2 border-[#333] pl-2">
-							Componentes Optativos
-						</td>
-						<td
-							class="py-2 w-1/4 text-center border-b-2 border-[#333]"
-						>
-							384 h
-						</td>
-					</tr>
-					<tr>
-						<td class="py-2 bg-white border-b-2 border-[#333] pl-2">
-							Estágio Supervisionado
-						</td>
-						<td
-							class="py-2 w-1/4 bg-white text-center border-b-2 border-[#333]"
-						>
-							320 h
-						</td>
-					</tr>
-					<tr>
-						<td class="py-2 border-b-2 border-[#333] pl-2">
-							Trabalho de Conclusão de Curso
-						</td>
-						<td
-							class="py-2 w-1/4 text-center border-b-2 border-[#333]"
-						>
-							64 h
-						</td>
-					</tr>
-					<tr>
-						<td class="py-2 bg-white border-b-2 border-[#333] pl-2">
-							Atividades Complementares
-						</td>
-						<td
-							class="py-2 w-1/4 bg-white text-center border-b-2 border-[#333]"
-						>
-							160 h
-						</td>
-					</tr>
-					<tr>
-						<td class="py-2 border-b-2 border-[#333] pl-2">
-							Atividades de Extensão
-						</td>
-						<td
-							class="py-2 w-1/4 text-center border-b-2 border-[#333]"
-						>
-							208 h
-						</td>
-					</tr>
-					<tr>
-						<td
-							class="py-2 bg-white border-b-2 border-[#333] pl-2 font-semibold"
-						>
-							Total geral do curso
-						</td>
-						<td
-							class="py-2 w-1/4 bg-white text-center border-b-2 border-[#333] font-semibold"
-						>
-							3.280 h
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+		</footer>
 		<script src="./semestre.js"></script>
 	</body>
 </html>
